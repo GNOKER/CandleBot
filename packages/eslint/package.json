@@ -1,0 +1,26 @@
+{
+  "name": "@application/eslint",
+  "dependencies": {
+    "deepmerge": "^4.3.1"
+  },
+  "devDependencies": {
+    "@application/tsconfig": "workspace:*",
+    "@types/eslint": "^8.56.9",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-html": "^8.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-import-newlines": "^1.4.0",
+    "eslint-plugin-jsonc": "^2.15.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-typescript-sort-keys": "^3.2.0",
+    "eslint-plugin-unicorn": "^52.0.0",
+    "eslint-plugin-vue": "^9.25.0",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "eslint": "node --max-semi-space-size=256 ../../node_modules/eslint/bin/eslint.js",
+    "lint": "pnpm eslint src/**/*.cjs --fix --cache"
+  }
+}
