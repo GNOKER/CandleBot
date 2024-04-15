@@ -10,7 +10,7 @@ export class ConfigService implements IconfigService {
             throw new Error('Не найден файл .env');
         }
         if (!parsed) {
-            throw new Error('пустой файл .env');
+            throw new Error('Пустой файл .env');
         }
         this.config = parsed
     }
@@ -18,7 +18,7 @@ export class ConfigService implements IconfigService {
     get(key: string): string {
         const res = this.config[key];
         if (!res) {
-            throw new Error('нет такого ключва');
+            throw new Error('Нет такого ключа');
 
         }
         return res;
