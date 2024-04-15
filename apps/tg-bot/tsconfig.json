@@ -1,0 +1,10 @@
+{
+  "extends": "@application/tsconfig/tsconfig.node.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+    },
+  }
+}

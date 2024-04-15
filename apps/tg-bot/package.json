@@ -1,0 +1,25 @@
+{
+  "name": "@application/tg-bot",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsx index.ts",
+    "dev": "tsx --watch --env-file .env.local ./index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint-code": "ESLINT_USE_FLAT_CONFIG=false eslint . --cache --fix"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@application/config-service": "workspace:*",
+    "telegraph": "^0.8.22"
+  },
+  "devDependencies": {
+    "@application/eslint": "workspace:*",
+    "@application/tsconfig": "workspace:*",
+    "@types/node": "^20.12.7",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
+  }
+}
