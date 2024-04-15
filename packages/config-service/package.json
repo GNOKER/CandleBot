@@ -1,0 +1,17 @@
+{
+  "name": "@application/config-service",
+  "type": "module",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "lint-code": "eslint . --cache --fix",
+    "lint-type": "tsc --noEmit"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@application/eslint": "workspace:*",
+    "@application/tsconfig": "workspace:*",
+    "fastify": "^4.26.2"
+  }
+}
